@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setText(View view){
-        TextView textView = (TextView) findViewById(R.id.textView3);
-        EditText editText = (EditText) findViewById(R.id.editTextTextPersonName2);
+        TextView textView = findViewById(R.id.textView3);
+        EditText editText = findViewById(R.id.editTextTextPersonName2);
         textView.setText(editText.getEditableText());
     }
 }
