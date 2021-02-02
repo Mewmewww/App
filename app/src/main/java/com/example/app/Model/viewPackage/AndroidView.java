@@ -1,4 +1,5 @@
-package viewPackage;
+package com.example.app.Model.viewPackage;
+
 
 import android.view.View;
 import android.widget.EditText;
@@ -8,6 +9,8 @@ import android.os.Bundle;
 import com.example.app.R;
 
 public class AndroidView extends AppCompatActivity {
+    Model model = new Model();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +19,11 @@ public class AndroidView extends AppCompatActivity {
     }
 
     public void setText(View view){
+        //model.setTexts("John");
         TextView textView = findViewById(R.id.textView3);
         EditText editText = findViewById(R.id.editTextTextPersonName2);
         textView.setText(editText.getEditableText());
+        //textView.setText("\n" +
+        //        model.getText());
     }
 }
